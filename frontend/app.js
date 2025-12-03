@@ -1,5 +1,4 @@
-
-const API_BASE = 'http://localhost:4000/api';
+const API_BASE = "https://multi-weather-server.onrender.com";
 const citiesContainer = document.getElementById('citiesContainer');
 const addCityForm = document.getElementById('addCityForm');
 const cityInput = document.getElementById('cityInput');
