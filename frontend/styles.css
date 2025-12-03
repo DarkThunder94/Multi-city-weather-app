@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Arial;background:linear-gradient(145deg,#5a2cf7,#b12fa6);min-height:100vh;color:#fff;display:flex;align-items:center;justify-content:center;padding:20px}
+.app-container{width:100%;max-width:540px;background:rgba(255,255,255,0.03);padding:18px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,0.35)}
+header{display:flex;flex-direction:column;gap:12px}
+header h1{margin:0;text-align:center;font-size:1.3rem}
+form{display:flex;gap:8px}
+form input{flex:1;padding:10px;border-radius:12px;border:none;background:rgba(255,255,255,0.08);color:#fff}
+form button{padding:10px 14px;border-radius:12px;border:none;background:#ffd166;color:#222;font-weight:600;cursor:pointer}
+.controls{display:flex;justify-content:flex-end;margin-top:12px}
+.controls button{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:8px 12px;border-radius:10px;color:#fff}
+.carousel{display:flex;gap:18px;overflow-x:auto;padding:18px 6px;scroll-snap-type:x mandatory;scroll-behavior:smooth;cursor:grab}
+.carousel::-webkit-scrollbar{display:none}
+.card{min-width:250px;background:rgba(255,255,255,0.06);padding:16px;border-radius:18px;flex-shrink:0;scroll-snap-align:center;backdrop-filter:blur(8px);box-shadow:0 8px 20px rgba(0,0,0,0.25)}
+.card-header{display:flex;justify-content:space-between;align-items:center}
+.city{font-weight:700}
+.temp{font-size:1.9rem;font-weight:800}
+.weather-icon{width:92px;height:92px;display:block;margin:10px auto}
+.card-details{font-size:0.9rem;opacity:0.95}
+.remove-btn{width:100%;margin-top:12px;padding:10px;border-radius:12px;border:none;background:rgba(255,255,255,0.08);color:#fff;cursor:pointer}
+@media (max-width:520px){.app-container{padding:14px}}

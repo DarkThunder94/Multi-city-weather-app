@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Multi-City Weather — India Pack</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Weather — Multi City</h1>
+      <form id="addCityForm" autocomplete="off">
+        <input id="cityInput" placeholder="Add city (e.g. Delhi)" required />
+        <button type="submit">Add</button>
+      </form>
+    </header>
+
+    <main>
+      <div class="controls">
+        <button id="refreshAllBtn" type="button">Refresh All</button>
+      </div>
+
+      <section id="citiesContainer" class="carousel"></section>
+    </main>
+
+    <footer>
+      <small>Data: Open-Meteo • Icons: local assets</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
